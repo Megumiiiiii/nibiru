@@ -5,9 +5,17 @@ wget -O nibi.sh https://raw.githubusercontent.com/Megumiiiiii/nibiru/main/nibi.s
 
 Snapshot from kj89
 
+```yaml
+sudo systemctl stop nibid
+cp $HOME/.nibid/data/priv_validator_state.json $HOME/.nibid/priv_validator_state.json.backup
+rm -rf $HOME/.nibid/data
 ```
-curl -L https://snapshots.kjnodes.com/nibiru-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nibid
-[[ -f $HOME/.nibid/data/upgrade-info.json ]] && cp $HOME/.nibid/data/upgrade-info.json $HOME/.nibid/cosmovisor/genesis/upgrade-info.json
 
+```yaml
+curl -L https://snapshots.kjnodes.com/nibiru-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nibid
+mv $HOME/.nibid/priv_validator_state.json.backup $HOME/.nibid/data/priv_validator_state.json
+```
+
+```yaml
 sudo systemctl restart nibid && sudo journalctl -u nibid -f --no-hostname -o cat
 ```
