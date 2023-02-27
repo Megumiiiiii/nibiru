@@ -19,3 +19,8 @@ mv $HOME/.nibid/priv_validator_state.json.backup $HOME/.nibid/data/priv_validato
 ```yaml
 sudo systemctl restart nibid && sudo journalctl -u nibid -f --no-hostname -o cat
 ```
+
+
+### List Command
+
+[Command](https://services.kjnodes.com/home/testnet/nibiru/useful-commands)
