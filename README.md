@@ -135,6 +135,7 @@ sudo systemctl start nibid && sudo journalctl -u nibid -f --no-hostname -o cat
 ## Useful command
 [Command](https://services.kjnodes.com/home/testnet/nibiru/useful-commands)
 
+#
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzNmZTIxZmE3ZmY3MzRiMDcwNDJhYTQ5ZmNlY2YxMWE1OWIyYmVkNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/mVBlqOD4ra9jQiI3cC/giphy.gif" height="125" width="420"/>
