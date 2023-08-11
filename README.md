@@ -133,7 +133,7 @@ sudo systemctl start nibid && sudo journalctl -u nibid -f --no-hostname -o cat
 ```
 
 ## Useful command
-[Command](https://services.kjnodes.com/home/testnet/nibiru/useful-commands)
+[Command](https://services.kjnodes.com/testnet/nibiru/useful-commands/)
 
 #
 
